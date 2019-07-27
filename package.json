@@ -4,9 +4,11 @@
   "description": "My development portfolio.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d dist"
   },
   "author": "",
+  "homepage": "https://abbasldn.com",
   "license": "ISC",
   "dependencies": {
     "gh-pages": "^2.0.1"
