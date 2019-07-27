@@ -1,0 +1,304 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+h1,
+h2,
+h3,
+h4,
+p,
+span,
+a,
+label {
+  font-family: "Avenir"; }
+
+img {
+  width: 10vw; }
+
+nav {
+  width: 100vw;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center; }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    list-style-type: none;
+    justify-content: center;
+    margin: auto;
+    transition: background-color 1s ease-in-out; }
+    nav ul li {
+      margin: 3vw 10vw;
+      width: 100vw; }
+      nav ul li a {
+        text-decoration: none;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        color: #fff;
+        font-weight: 700; }
+    nav ul li#nav-logo {
+      display: none; }
+  nav .ul-open {
+    display: flex;
+    position: absolute;
+    height: 100vh;
+    background-color: rgba(96, 98, 218, 0.884); }
+  nav a#logo {
+    width: 10vw;
+    position: absolute;
+    margin: 10vw; }
+  nav .toggle-container {
+    position: absolute;
+    align-self: flex-end; }
+    nav .toggle-container .nav-icon {
+      margin: 10vw;
+      width: 10vw; }
+      nav .toggle-container .nav-icon span {
+        background-color: #000;
+        border-radius: 3px;
+        content: '';
+        display: block;
+        height: 5px;
+        margin: 7px 0;
+        transition: all 0.5s ease-in-out; }
+    nav .toggle-container .pushed .bar {
+      background-color: #fff; }
+    nav .toggle-container .pushed .bar:nth-of-type(1) {
+      transform: translateY(12px) rotate(135deg); }
+    nav .toggle-container .pushed .bar:nth-of-type(2) {
+      transform: scale(0); }
+    nav .toggle-container .pushed .bar:nth-of-type(3) {
+      transform: translateY(-12px) rotate(-135deg); }
+
+main .section-content {
+  width: 80vw;
+  margin: 0 auto; }
+
+main .section-content h1:after {
+  content: '';
+  display: block;
+  background-image: linear-gradient(270deg, #9fd8ff 3%, #0283bc 50%, #000054 97%);
+  width: 20vw;
+  height: 4px; }
+
+main .section-content h1 {
+  margin: 5vw 0;
+  font-size: 2.5rem;
+  font-weight: 900; }
+
+main .section-content h1:after {
+  margin: 5vw 0; }
+
+main .section-content p {
+  font-size: 1.5rem;
+  padding: 5vw 0 15vw 0; }
+
+main section.section-one {
+  background-color: #deeefb; }
+  main section.section-one h1,
+  main section.section-one p {
+    width: 80vw;
+    margin: auto; }
+  main section.section-one .section-content {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+  main section.section-one .top {
+    padding-top: 27vw; }
+  main section.section-one .bottom .transition {
+    background-color: #deeefb; }
+    main section.section-one .bottom .transition img {
+      width: 100vw;
+      vertical-align: bottom; }
+  main section.section-one .bottom .landing-greeting {
+    background-color: #000054;
+    box-shadow: 0px 1px 1px 1px #deeefb; }
+    main section.section-one .bottom .landing-greeting .landing-text {
+      width: 80vw;
+      margin: auto;
+      color: #fff; }
+      main section.section-one .bottom .landing-greeting .landing-text h1 {
+        padding-top: 5vw; }
+
+main section.section-two {
+  width: 100vw; }
+  main section.section-two .section-content {
+    width: 80vw;
+    margin: auto; }
+    main section.section-two .section-content h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-top: 10vw; }
+    main section.section-two .section-content .work {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+      main section.section-two .section-content .work .work-tile {
+        width: 80vw;
+        margin-top: 3vw; }
+        main section.section-two .section-content .work .work-tile .work-content {
+          width: 80vw; }
+          main section.section-two .section-content .work .work-tile .work-content img {
+            width: 80vw; }
+        main section.section-two .section-content .work .work-tile .client-name a {
+          text-decoration: none;
+          color: #000054; }
+          main section.section-two .section-content .work .work-tile .client-name a h3 {
+            font-weight: 700;
+            font-size: 1.6rem;
+            margin: 5vw 0; }
+        main section.section-two .section-content .work .work-tile .client-name p {
+          padding: 0 0 10vw 0;
+          font-size: 1.2rem;
+          font-style: italic; }
+    main section.section-two .section-content a#help {
+      padding: 3vw 6vw;
+      border-radius: 20vw;
+      border: 1vw solid #deeefb;
+      text-decoration: none;
+      color: #deeffb;
+      background-color: #000054; }
+
+main section.section-three .section-content {
+  padding-top: 5vw; }
+  main section.section-three .section-content .testimonials {
+    background-color: #deeefb;
+    padding: 5vw;
+    border-radius: 5vw;
+    box-shadow: 0px 1px 16px 1px #cfcfcf; }
+    main section.section-three .section-content .testimonials p {
+      font-size: 1rem;
+      padding: 0 0 3vw 0; }
+
+main section.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  main section.form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80vw; }
+    main section.form form div.wideblock {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      width: 80vw; }
+      main section.form form div.wideblock div.formconts {
+        display: flex;
+        flex-direction: column;
+        width: 100%; }
+    main section.form form label {
+      font-size: 1.563em;
+      font-weight: 100; }
+    main section.form form label,
+    main section.form form input,
+    main section.form form textarea {
+      transition: box-shadow 0.5s;
+      -webkit-transition: box-shadow 0.5s;
+      outline: none;
+      border-style: none;
+      margin-top: 4vw; }
+    main section.form form textarea {
+      max-width: 80vw; }
+    main section.form form textarea,
+    main section.form form input#firstname,
+    main section.form form input#surname,
+    main section.form form input#email,
+    main section.form form input#company {
+      background-color: #f8f8f8;
+      padding: 4vw;
+      font-size: 1em;
+      font-family: 'Avenir'; }
+    main section.form form input:hover,
+    main section.form form textarea:hover {
+      box-shadow: 0 0px 5px rgba(0, 0, 255, 0.9);
+      outline: none; }
+    main section.form form div.button-container {
+      margin-top: 5vw;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      main section.form form div.button-container button {
+        padding: 4vw;
+        background-color: #deeefb;
+        border-radius: 25px;
+        font-size: 0.9em;
+        width: 66.6%;
+        font-family: 'Avenir';
+        font-size: 1.1em;
+        text-transform: uppercase;
+        border: none;
+        box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.2); }
+
+footer {
+  margin-top: 10.6vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000054; }
+  footer h1 {
+    width: 80vw;
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-top: 11.4vw;
+    text-align: left; }
+  footer p {
+    color: #d6d6d6;
+    width: 80vw;
+    font-weight: 100;
+    margin-top: 5.3vw;
+    font-size: 1.188rem; }
+  footer div#icons {
+    width: 80vw;
+    margin-top: 5.3vw; }
+    footer div#icons a {
+      color: #fff;
+      text-decoration: none;
+      margin-right: 8px; }
+  footer span {
+    color: #d6d6d6;
+    width: 80vw;
+    margin-top: 5.3vw;
+    margin-bottom: 21.3vw;
+    font-style: italic;
+    font-size: 1.188rem; }
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20vw;
+  margin-bottom: 5vw; }
+  .details img,
+  .details p {
+    width: 80vw;
+    margin-bottom: 5vw; }
+  .details img {
+    margin: 5vw; }
+  .details hr {
+    border: 0.5vw solid #deeffb;
+    width: 80vw;
+    margin-bottom: 5vw;
+    border-radius: 10vw; }
+  .details a {
+    text-decoration: none;
+    color: #333;
+    width: 80vw;
+    text-align: center;
+    background-color: #deeffb;
+    padding: 1.5vw;
+    margin-bottom: 1vw;
+    border-radius: 10px; }
+    .details a i {
+      margin-left: 1vw; }
+  .details ul {
+    width: 70vw;
+    margin-bottom: 5vw; }
