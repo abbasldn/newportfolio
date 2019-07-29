@@ -360,6 +360,9 @@ footer {
   justify-content: center;
   align-items: center;
   background-color: #000054; }
+  @media (min-width: 840px) {
+    footer {
+      margin-top: 0; } }
   footer h1 {
     width: 80vw;
     color: #fff;
@@ -389,6 +392,10 @@ footer {
   footer div#icons {
     width: 80vw;
     margin-top: 5.3vw; }
+    footer div#icons a {
+      text-decoration: none;
+      color: #fff;
+      margin: 0 3vw; }
     @media (min-width: 840px) {
       footer div#icons {
         margin-top: 2vw;

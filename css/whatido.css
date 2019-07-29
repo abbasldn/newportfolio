@@ -13,11 +13,11 @@ header nav a {
 header nav .toggle-container .nav-icon .bar {
   background-color: #deeefb; }
 
-h1 {
+main section h1 {
   font-size: 2.5rem; }
 
-h1:after,
-h2:after {
+main section h1:after,
+main section h2:after {
   content: '';
   display: block;
   background-image: linear-gradient(270deg, #9fd8ff 3%, #0283bc 50%, #000054 97%);
@@ -25,23 +25,23 @@ h2:after {
   height: 4px;
   margin: 5vw 0; }
   @media (min-width: 840px) {
-    h1:after,
-    h2:after {
+    main section h1:after,
+    main section h2:after {
       margin: 2vw 0; } }
 
-h1 {
+main section h1 {
   padding: 5vw 0;
   font-size: 2.5rem;
   font-weight: 900; }
   @media (min-width: 840px) {
-    h1 {
+    main section h1 {
       padding: 1vw 0; } }
 
-p {
+main section p {
   font-size: 1.5rem;
   padding: 5vw 0 15vw 0; }
   @media (min-width: 840px) {
-    p {
+    main section p {
       padding: 0 0 5vw 0; } }
 
 section#whatiknow {
@@ -100,12 +100,15 @@ section#details {
               padding-bottom: 2vw; } }
 
 footer {
-  margin-top: 0;
+  margin-top: 0vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #000054; }
+  @media (min-width: 840px) {
+    footer {
+      margin-top: 0; } }
   footer h1 {
     width: 80vw;
     color: #fff;
@@ -135,6 +138,13 @@ footer {
   footer div#icons {
     width: 80vw;
     margin-top: 5.3vw; }
+    footer div#icons a {
+      text-decoration: none;
+      color: #fff;
+      margin: 0 3vw; }
+      @media (min-width: 840px) {
+        footer div#icons a {
+          margin: 0 3vw 0 0; } }
     @media (min-width: 840px) {
       footer div#icons {
         margin-top: 2vw;
