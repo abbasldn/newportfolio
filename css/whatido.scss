@@ -1,0 +1,104 @@
+header {
+    nav {
+
+        ul,
+        a#logo,
+        .toggle-container {
+            z-index: 5;
+        }
+
+        .toggle-container {
+            .nav-icon {
+                .bar {
+                    background-color: #deeefb;
+                }
+            }
+        }
+    }
+
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+
+h1:after,
+h2:after {
+    content: '';
+    display: block;
+    background-image: linear-gradient(270deg, #9fd8ff 3%, #0283bc 50%, #000054 97%);
+    width: 20vw;
+    height: 4px;
+    margin: 5vw 0;
+    border-radius: 10px;
+}
+
+
+section#whatiknow {
+    background-color: #000054;
+
+    .introtowhatiknow {
+        color: #deeefb;
+        width: 80vw;
+        padding: 27vw 0 10vw 0;
+        margin: auto;
+
+        h1 {
+            margin-bottom: 7vw;
+        }
+    }
+
+
+
+}
+
+
+section#details {
+    background-color: #deeefb;
+
+
+    img {
+        transform: rotate(180deg);
+        width: 100vw;
+        z-index: -1;
+    }
+
+    .detail-landing,
+    .what-i-can-do {
+        width: 80vw;
+        margin: auto;
+
+        h2 {
+            font-size: 2.3rem;
+            margin-bottom: 5vw;
+        }
+    }
+
+    .detail-landing {}
+
+    .what-i-can-do {
+        padding: 5vw 0;
+
+        ul {
+            list-style-type: none;
+
+            li {
+                margin-bottom: 5vw;
+
+                h4 {
+                    font-size: 1.6rem;
+                    margin-bottom: 3vw;
+                }
+
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    margin-top: 0;
+}
