@@ -3,6 +3,13 @@ header nav a#logo,
 header nav .toggle-container {
   z-index: 5; }
 
+header nav a {
+  color: black; }
+
+@media (min-width: 840px) {
+  header nav ul li a {
+    color: #fff; } }
+
 header nav .toggle-container .nav-icon .bar {
   background-color: #deeefb; }
 
@@ -16,8 +23,26 @@ h2:after {
   background-image: linear-gradient(270deg, #9fd8ff 3%, #0283bc 50%, #000054 97%);
   width: 20vw;
   height: 4px;
-  margin: 5vw 0;
-  border-radius: 10px; }
+  margin: 5vw 0; }
+  @media (min-width: 840px) {
+    h1:after,
+    h2:after {
+      margin: 2vw 0; } }
+
+h1 {
+  padding: 5vw 0;
+  font-size: 2.5rem;
+  font-weight: 900; }
+  @media (min-width: 840px) {
+    h1 {
+      padding: 1vw 0; } }
+
+p {
+  font-size: 1.5rem;
+  padding: 5vw 0 15vw 0; }
+  @media (min-width: 840px) {
+    p {
+      padding: 0 0 5vw 0; } }
 
 section#whatiknow {
   background-color: #000054; }
@@ -26,8 +51,14 @@ section#whatiknow {
     width: 80vw;
     padding: 27vw 0 10vw 0;
     margin: auto; }
+    @media (min-width: 840px) {
+      section#whatiknow .introtowhatiknow {
+        padding: 22vw 0 4vw 0; } }
     section#whatiknow .introtowhatiknow h1 {
       margin-bottom: 7vw; }
+      @media (min-width: 840px) {
+        section#whatiknow .introtowhatiknow h1 {
+          margin-bottom: 2vw; } }
 
 section#details {
   background-color: #deeefb; }
@@ -39,6 +70,10 @@ section#details {
   section#details .what-i-can-do {
     width: 80vw;
     margin: auto; }
+    @media (min-width: 840px) {
+      section#details .detail-landing,
+      section#details .what-i-can-do {
+        padding: 5vw 0 0 0; } }
     section#details .detail-landing h2,
     section#details .what-i-can-do h2 {
       font-size: 2.3rem;
@@ -49,11 +84,69 @@ section#details {
       list-style-type: none; }
       section#details .what-i-can-do ul li {
         margin-bottom: 5vw; }
+        @media (min-width: 840px) {
+          section#details .what-i-can-do ul li {
+            margin-bottom: 1vw; } }
         section#details .what-i-can-do ul li h4 {
           font-size: 1.6rem;
           margin-bottom: 3vw; }
+          @media (min-width: 840px) {
+            section#details .what-i-can-do ul li h4 {
+              margin-bottom: 1vw; } }
         section#details .what-i-can-do ul li p {
           font-size: 1.2rem; }
+          @media (min-width: 840px) {
+            section#details .what-i-can-do ul li p {
+              padding-bottom: 2vw; } }
 
 footer {
-  margin-top: 0; }
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000054; }
+  footer h1 {
+    width: 80vw;
+    color: #fff;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-top: 11.4vw;
+    text-align: left; }
+  footer p {
+    color: #d6d6d6;
+    width: 80vw;
+    font-weight: 100;
+    margin-top: 5.3vw;
+    font-size: 1.188rem; }
+    @media (min-width: 840px) {
+      footer p {
+        margin-top: 1.5vw;
+        font-size: 1.880rem; } }
+  footer a#email {
+    width: 80vw;
+    font-size: 1.188rem;
+    text-decoration: none;
+    color: #d6d6d6;
+    margin-top: 3.2vw; }
+    @media (min-width: 840px) {
+      footer a#email {
+        margin: 2vw 0; } }
+  footer div#icons {
+    width: 80vw;
+    margin-top: 5.3vw; }
+    @media (min-width: 840px) {
+      footer div#icons {
+        margin-top: 2vw;
+        color: #fff; } }
+  footer span {
+    color: #d6d6d6;
+    width: 80vw;
+    margin-top: 5.3vw;
+    margin-bottom: 21.3vw;
+    font-style: italic;
+    font-size: 1.188rem; }
+    @media (min-width: 840px) {
+      footer span {
+        margin: 2vw 0 5vw 0;
+        font-size: 1.5rem; } }

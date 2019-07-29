@@ -12,9 +12,6 @@ a,
 label {
   font-family: "Avenir"; }
 
-img {
-  width: 10vw; }
-
 .svgwhite {
   fill: #fff; }
 
@@ -24,6 +21,12 @@ nav {
   display: flex;
   flex-direction: column;
   align-content: center; }
+  @media (min-width: 840px) {
+    nav {
+      justify-content: center;
+      height: 20vw;
+      position: absolute;
+      flex-direction: row; } }
   nav ul {
     height: 0;
     width: 100vw;
@@ -36,22 +39,50 @@ nav {
     opacity: 0;
     transition: opacity 0.5s ease-in-out, height 0.5s ease-in-out;
     background-color: rgba(0, 2, 126, 0.945); }
+    @media (min-width: 840px) {
+      nav ul {
+        opacity: 1;
+        flex-direction: row;
+        align-items: center;
+        height: inherit;
+        background-color: inherit;
+        width: 80vw;
+        margin: auto; } }
     nav ul li {
       margin: 3vw 10vw; }
+      @media (min-width: 840px) {
+        nav ul li {
+          margin: 5vw 1vw;
+          width: 15vw; } }
       nav ul li a {
         text-decoration: none;
         font-size: 1.5rem;
         text-transform: uppercase;
         color: #fff;
         font-weight: 700; }
+        @media (min-width: 840px) {
+          nav ul li a {
+            color: #000; } }
       nav ul li a:after {
         content: '';
         display: block;
         background-image: linear-gradient(270deg, #9fd8ff 3%, #0283bc 50%, #000054 97%);
         width: 20vw;
         height: 4px; }
+        @media (min-width: 840px) {
+          nav ul li a:after {
+            width: 5vw; } }
     nav ul li#nav-logo {
       display: none; }
+      @media (min-width: 840px) {
+        nav ul li#nav-logo {
+          display: block; } }
+      @media (min-width: 840px) {
+        nav ul li#nav-logo img {
+          width: 10vw;
+          border-radius: 50%; } }
+      nav ul li#nav-logo a:after {
+        display: none; }
   nav ul.ul-open {
     height: 100vh;
     opacity: 1; }
@@ -59,9 +90,15 @@ nav {
     width: 10vw;
     position: absolute;
     margin: 10vw; }
+    @media (min-width: 840px) {
+      nav a#logo {
+        display: none; } }
   nav .toggle-container {
     position: absolute;
     align-self: flex-end; }
+    @media (min-width: 840px) {
+      nav .toggle-container {
+        display: none; } }
     nav .toggle-container .nav-icon {
       margin: 10vw;
       width: 10vw; }
@@ -93,15 +130,24 @@ main .section-content h1:after {
   width: 20vw;
   height: 4px;
   margin: 5vw 0; }
+  @media (min-width: 840px) {
+    main .section-content h1:after {
+      margin: 2vw 0; } }
 
 main .section-content h1 {
   padding: 5vw 0;
   font-size: 2.5rem;
   font-weight: 900; }
+  @media (min-width: 840px) {
+    main .section-content h1 {
+      padding: 1vw 0; } }
 
 main .section-content p {
   font-size: 1.5rem;
   padding: 5vw 0 15vw 0; }
+  @media (min-width: 840px) {
+    main .section-content p {
+      padding: 0 0 5vw 0; } }
 
 main section.section-one {
   background-color: #deeefb; }
@@ -116,6 +162,9 @@ main section.section-one {
     justify-content: space-between; }
   main section.section-one .top {
     padding-top: 27vw; }
+    @media (min-width: 840px) {
+      main section.section-one .top {
+        padding-top: 15vw; } }
   main section.section-one .bottom .transition {
     background-color: #deeefb; }
     main section.section-one .bottom .transition img {
@@ -140,99 +189,155 @@ main section.section-two {
       font-size: 2rem;
       font-weight: 700;
       padding-top: 10vw; }
+      @media (min-width: 840px) {
+        main section.section-two .section-content h1 {
+          padding-top: 5vw; } }
     main section.section-two .section-content .work {
       display: flex;
       flex-direction: column;
       justify-content: space-around; }
+      @media (min-width: 840px) {
+        main section.section-two .section-content .work {
+          flex-direction: row;
+          justify-content: space-between; } }
       main section.section-two .section-content .work .work-tile {
-        width: 80vw;
         margin-top: 3vw; }
-        main section.section-two .section-content .work .work-tile .work-content {
-          width: 80vw; }
+      main section.section-two .section-content .work .work-tile,
+      main section.section-two .section-content .work .work-content,
+      main section.section-two .section-content .work .work-tile .work-content img {
+        width: 80vw; }
+        @media (min-width: 840px) {
+          main section.section-two .section-content .work .work-tile,
+          main section.section-two .section-content .work .work-content,
           main section.section-two .section-content .work .work-tile .work-content img {
-            width: 80vw; }
-        main section.section-two .section-content .work .work-tile .client-name a {
-          text-decoration: none;
-          color: #000054; }
-          main section.section-two .section-content .work .work-tile .client-name a h3 {
-            font-weight: 700;
-            font-size: 1.6rem;
-            margin: 5vw 0; }
-        main section.section-two .section-content .work .work-tile .client-name p {
-          padding: 0 0 10vw 0;
-          font-size: 1.2rem;
-          font-style: italic; }
-    main section.section-two .section-content a#help {
-      padding: 3vw 6vw;
-      border-radius: 20vw;
-      border: 1vw solid #deeefb;
-      text-decoration: none;
-      color: #deeffb;
-      background-color: #000054; }
+            width: 30vw; } }
+      @media (min-width: 840px) {
+        main section.section-two .section-content .work .work-tile .work-content img {
+          width: 30vw;
+          height: 30vw; } }
+      main section.section-two .section-content .work .client-name a {
+        text-decoration: none;
+        color: #000054; }
+        main section.section-two .section-content .work .client-name a h3 {
+          font-weight: 700;
+          font-size: 1.6rem;
+          margin: 5vw 0; }
+          @media (min-width: 840px) {
+            main section.section-two .section-content .work .client-name a h3 {
+              margin: 1vw 0; } }
+      main section.section-two .section-content .work .client-name p {
+        padding: 0 0 10vw 0;
+        font-size: 1.2rem;
+        font-style: italic; }
+        @media (min-width: 840px) {
+          main section.section-two .section-content .work .client-name p {
+            padding-bottom: 6vw; } }
+  main section.section-two a#help {
+    padding: 3vw 6vw;
+    border-radius: 20vw;
+    border: 1vw solid #deeefb;
+    text-decoration: none;
+    color: #deeffb;
+    background-color: #000054; }
+    @media (min-width: 840px) {
+      main section.section-two a#help {
+        padding: 1vw 3vw; } }
 
-main section.section-three .section-content {
+section.section-three .section-content {
   padding-top: 5vw; }
-  main section.section-three .section-content .testimonials {
+  section.section-three .section-content .testimonials {
     background-color: #deeefb;
     padding: 5vw;
     border-radius: 5vw;
     box-shadow: 0px 1px 16px 1px #cfcfcf; }
-    main section.section-three .section-content .testimonials p {
+    section.section-three .section-content .testimonials p {
       font-size: 1rem;
       padding: 0 0 5vw 0; }
+      @media (min-width: 840px) {
+        section.section-three .section-content .testimonials p {
+          font-size: 1.25rem;
+          padding-bottom: 3vw; } }
+    @media (min-width: 840px) {
+      section.section-three .section-content .testimonials h4 {
+        font-size: 1.3rem; } }
 
-main section.form {
+section.form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center; }
-  main section.form form {
+  @media (min-width: 840px) {
+    section.form .section-content {
+      padding: 3vw 0; } }
+  section.form form {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 80vw; }
-    main section.form form div.wideblock {
+    section.form form div.wideblock {
       display: flex;
       justify-content: center;
       flex-direction: column;
       align-items: center;
       width: 80vw; }
-      main section.form form div.wideblock div.formconts {
+      @media (min-width: 840px) {
+        section.form form div.wideblock {
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between; } }
+      section.form form div.wideblock div.formconts {
         display: flex;
         flex-direction: column;
         width: 100%; }
-    main section.form form label {
+        @media (min-width: 840px) {
+          section.form form div.wideblock div.formconts {
+            display: flex;
+            flex-direction: column;
+            width: 47.5%; } }
+    section.form form label {
       font-size: 1.563em;
       font-weight: 100; }
-    main section.form form label,
-    main section.form form input,
-    main section.form form textarea {
+    section.form form label,
+    section.form form input,
+    section.form form textarea {
       transition: box-shadow 0.5s;
       -webkit-transition: box-shadow 0.5s;
       outline: none;
       border-style: none;
       margin-top: 4vw; }
-    main section.form form textarea {
+      @media (min-width: 840px) {
+        section.form form label,
+        section.form form input,
+        section.form form textarea {
+          margin-top: 2vw; } }
+    section.form form textarea {
       max-width: 80vw; }
-    main section.form form textarea,
-    main section.form form input#firstname,
-    main section.form form input#surname,
-    main section.form form input#email,
-    main section.form form input#company {
+    section.form form textarea,
+    section.form form input#firstname,
+    section.form form input#surname,
+    section.form form input#email,
+    section.form form input#company {
       background-color: #f8f8f8;
       padding: 4vw;
       font-size: 1em;
       font-family: 'Avenir'; }
-    main section.form form input:hover,
-    main section.form form textarea:hover {
+      @media (min-width: 840px) {
+        section.form form textarea,
+        section.form form input#firstname,
+        section.form form input#surname,
+        section.form form input#email,
+        section.form form input#company {
+          padding: 2vw; } }
+    section.form form input:hover,
+    section.form form textarea:hover {
       box-shadow: 0 0px 5px rgba(0, 0, 255, 0.9);
       outline: none; }
-    main section.form form div.button-container {
+    section.form form div.button-container {
       margin-top: 5vw;
       display: flex;
       align-items: center;
       justify-content: center; }
-      main section.form form div.button-container button {
+      section.form form div.button-container button {
         padding: 4vw;
         background-color: #deeefb;
         border-radius: 25px;
@@ -243,6 +348,10 @@ main section.form {
         text-transform: uppercase;
         border: none;
         box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.2); }
+        @media (min-width: 840px) {
+          section.form form div.button-container button {
+            width: 25%;
+            padding: 1vw; } }
 
 footer {
   margin-top: 10.6vw;
@@ -264,19 +373,26 @@ footer {
     font-weight: 100;
     margin-top: 5.3vw;
     font-size: 1.188rem; }
+    @media (min-width: 840px) {
+      footer p {
+        margin-top: 1.5vw;
+        font-size: 1.880rem; } }
   footer a#email {
     width: 80vw;
     font-size: 1.188rem;
     text-decoration: none;
     color: #d6d6d6;
     margin-top: 3.2vw; }
+    @media (min-width: 840px) {
+      footer a#email {
+        margin: 2vw 0; } }
   footer div#icons {
     width: 80vw;
     margin-top: 5.3vw; }
-    footer div#icons a {
-      color: #fff;
-      text-decoration: none;
-      margin-right: 8px; }
+    @media (min-width: 840px) {
+      footer div#icons {
+        margin-top: 2vw;
+        color: #fff; } }
   footer span {
     color: #d6d6d6;
     width: 80vw;
@@ -284,3 +400,7 @@ footer {
     margin-bottom: 21.3vw;
     font-style: italic;
     font-size: 1.188rem; }
+    @media (min-width: 840px) {
+      footer span {
+        margin: 2vw 0 5vw 0;
+        font-size: 1.5rem; } }
