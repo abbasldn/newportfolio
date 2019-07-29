@@ -36,11 +36,21 @@ $(document).ready(function () {
             }
         });
 
-
     $(".toggle-container").click(function () {
         $(".nav-icon").toggleClass("pushed");
+        $("#nav-ul").toggleClass('ul-open');
+        // $("path#svg").attr("style", "fill: #deeefb");
+        // if ($("path#svg").attr("style")) {
+        //     $("path#svg").removeAttr("style")
+        // }
+        $("path#svg").attr("style") ? $("path#svg").removeAttr('style') : $("path#svg").attr('style', "fill:#deeefb");
 
-        $('#nav-ul').toggleClass('ul-open')
     })
+
+    $(document).scroll(function () {
+        $(".nav-icon").removeClass("pushed");
+        $('#nav-ul').removeClass('ul-open');
+    })
+
 
 })

@@ -15,6 +15,9 @@ label {
 img {
   width: 10vw; }
 
+.svgwhite {
+  fill: #fff; }
+
 nav {
   width: 100vw;
   margin: auto;
@@ -22,28 +25,36 @@ nav {
   flex-direction: column;
   align-content: center; }
   nav ul {
-    display: none;
+    height: 0;
+    width: 100vw;
+    display: flex;
     flex-direction: column;
     list-style-type: none;
     justify-content: center;
     margin: auto;
-    transition: background-color 1s ease-in-out; }
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, height 0.5s ease-in-out;
+    background-color: rgba(0, 2, 126, 0.945); }
     nav ul li {
-      margin: 3vw 10vw;
-      width: 100vw; }
+      margin: 3vw 10vw; }
       nav ul li a {
         text-decoration: none;
         font-size: 1.5rem;
         text-transform: uppercase;
         color: #fff;
         font-weight: 700; }
+      nav ul li a:after {
+        content: '';
+        display: block;
+        background-image: linear-gradient(270deg, #9fd8ff 3%, #0283bc 50%, #000054 97%);
+        width: 20vw;
+        height: 4px; }
     nav ul li#nav-logo {
       display: none; }
-  nav .ul-open {
-    display: flex;
-    position: absolute;
+  nav ul.ul-open {
     height: 100vh;
-    background-color: rgba(96, 98, 218, 0.884); }
+    opacity: 1; }
   nav a#logo {
     width: 10vw;
     position: absolute;
@@ -80,15 +91,13 @@ main .section-content h1:after {
   display: block;
   background-image: linear-gradient(270deg, #9fd8ff 3%, #0283bc 50%, #000054 97%);
   width: 20vw;
-  height: 4px; }
+  height: 4px;
+  margin: 5vw 0; }
 
 main .section-content h1 {
-  margin: 5vw 0;
+  padding: 5vw 0;
   font-size: 2.5rem;
   font-weight: 900; }
-
-main .section-content h1:after {
-  margin: 5vw 0; }
 
 main .section-content p {
   font-size: 1.5rem;
@@ -130,7 +139,7 @@ main section.section-two {
     main section.section-two .section-content h1 {
       font-size: 2rem;
       font-weight: 700;
-      margin-top: 10vw; }
+      padding-top: 10vw; }
     main section.section-two .section-content .work {
       display: flex;
       flex-direction: column;
@@ -170,7 +179,7 @@ main section.section-three .section-content {
     box-shadow: 0px 1px 16px 1px #cfcfcf; }
     main section.section-three .section-content .testimonials p {
       font-size: 1rem;
-      padding: 0 0 3vw 0; }
+      padding: 0 0 5vw 0; }
 
 main section.form {
   display: flex;
@@ -255,6 +264,12 @@ footer {
     font-weight: 100;
     margin-top: 5.3vw;
     font-size: 1.188rem; }
+  footer a#email {
+    width: 80vw;
+    font-size: 1.188rem;
+    text-decoration: none;
+    color: #d6d6d6;
+    margin-top: 3.2vw; }
   footer div#icons {
     width: 80vw;
     margin-top: 5.3vw; }
@@ -269,36 +284,3 @@ footer {
     margin-bottom: 21.3vw;
     font-style: italic;
     font-size: 1.188rem; }
-
-.details {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding-top: 20vw;
-  margin-bottom: 5vw; }
-  .details img,
-  .details p {
-    width: 80vw;
-    margin-bottom: 5vw; }
-  .details img {
-    margin: 5vw; }
-  .details hr {
-    border: 0.5vw solid #deeffb;
-    width: 80vw;
-    margin-bottom: 5vw;
-    border-radius: 10vw; }
-  .details a {
-    text-decoration: none;
-    color: #333;
-    width: 80vw;
-    text-align: center;
-    background-color: #deeffb;
-    padding: 1.5vw;
-    margin-bottom: 1vw;
-    border-radius: 10px; }
-    .details a i {
-      margin-left: 1vw; }
-  .details ul {
-    width: 70vw;
-    margin-bottom: 5vw; }

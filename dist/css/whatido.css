@@ -1,0 +1,59 @@
+header nav ul,
+header nav a#logo,
+header nav .toggle-container {
+  z-index: 5; }
+
+header nav .toggle-container .nav-icon .bar {
+  background-color: #deeefb; }
+
+h1 {
+  font-size: 2.5rem; }
+
+h1:after,
+h2:after {
+  content: '';
+  display: block;
+  background-image: linear-gradient(270deg, #9fd8ff 3%, #0283bc 50%, #000054 97%);
+  width: 20vw;
+  height: 4px;
+  margin: 5vw 0;
+  border-radius: 10px; }
+
+section#whatiknow {
+  background-color: #000054; }
+  section#whatiknow .introtowhatiknow {
+    color: #deeefb;
+    width: 80vw;
+    padding: 27vw 0 10vw 0;
+    margin: auto; }
+    section#whatiknow .introtowhatiknow h1 {
+      margin-bottom: 7vw; }
+
+section#details {
+  background-color: #deeefb; }
+  section#details img {
+    transform: rotate(180deg);
+    width: 100vw;
+    z-index: -1; }
+  section#details .detail-landing,
+  section#details .what-i-can-do {
+    width: 80vw;
+    margin: auto; }
+    section#details .detail-landing h2,
+    section#details .what-i-can-do h2 {
+      font-size: 2.3rem;
+      margin-bottom: 5vw; }
+  section#details .what-i-can-do {
+    padding: 5vw 0; }
+    section#details .what-i-can-do ul {
+      list-style-type: none; }
+      section#details .what-i-can-do ul li {
+        margin-bottom: 5vw; }
+        section#details .what-i-can-do ul li h4 {
+          font-size: 1.6rem;
+          margin-bottom: 3vw; }
+        section#details .what-i-can-do ul li p {
+          font-size: 1.2rem; }
+
+footer {
+  margin-top: 0; }
