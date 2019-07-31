@@ -1,3 +1,11 @@
+$desktop: 840px;
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
 header {
     nav {
 
@@ -6,6 +14,23 @@ header {
         .toggle-container {
             z-index: 5;
         }
+
+        a {
+            color: black;
+        }
+
+        ul {
+            li {
+                a {
+                    @include desktop {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+
+
+
 
         .toggle-container {
             .nav-icon {
@@ -18,20 +43,46 @@ header {
 
 }
 
-h1 {
-    font-size: 2.5rem;
-}
+main {
+    section {
+        h1 {
+            font-size: 2.5rem;
+        }
 
 
-h1:after,
-h2:after {
-    content: '';
-    display: block;
-    background-image: linear-gradient(270deg, #9fd8ff 3%, #0283bc 50%, #000054 97%);
-    width: 20vw;
-    height: 4px;
-    margin: 5vw 0;
-    border-radius: 10px;
+        h1:after,
+        h2:after {
+            content: '';
+            display: block;
+            background-image: linear-gradient(270deg, #9fd8ff 3%, #0283bc 50%, #000054 97%);
+            width: 20vw;
+            height: 4px;
+            margin: 5vw 0;
+
+            @include desktop {
+                margin: 2vw 0;
+            }
+        }
+
+        h1 {
+            padding: 5vw 0;
+            font-size: 2.5rem;
+            font-weight: 900;
+
+            @include desktop {
+                padding: 1vw 0;
+            }
+        }
+
+        p {
+            font-size: 1.5rem;
+            padding: 5vw 0 15vw 0;
+
+            @include desktop {
+                padding: 0 0 5vw 0;
+            }
+        }
+    }
 }
 
 
@@ -44,8 +95,16 @@ section#whatiknow {
         padding: 27vw 0 10vw 0;
         margin: auto;
 
+        @include desktop {
+            padding: 22vw 0 4vw 0;
+        }
+
         h1 {
             margin-bottom: 7vw;
+
+            @include desktop {
+                margin-bottom: 2vw;
+            }
         }
     }
 
@@ -69,6 +128,10 @@ section#details {
         width: 80vw;
         margin: auto;
 
+        @include desktop {
+            padding: 5vw 0 0 0;
+        }
+
         h2 {
             font-size: 2.3rem;
             margin-bottom: 5vw;
@@ -86,13 +149,25 @@ section#details {
             li {
                 margin-bottom: 5vw;
 
+                @include desktop {
+                    margin-bottom: 1vw;
+                }
+
                 h4 {
                     font-size: 1.6rem;
                     margin-bottom: 3vw;
+
+                    @include desktop {
+                        margin-bottom: 1vw;
+                    }
                 }
 
                 p {
                     font-size: 1.2rem;
+
+                    @include desktop {
+                        padding-bottom: 2vw;
+                    }
                 }
             }
         }
@@ -100,5 +175,83 @@ section#details {
 }
 
 footer {
-    margin-top: 0;
+    margin-top: 0vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000054;
+
+    @include desktop {
+        margin-top: 0;
+    }
+
+    h1 {
+        width: 80vw;
+        color: #fff;
+        font-weight: 700;
+        font-size: 2.5rem;
+        margin-top: 11.4vw;
+        text-align: left;
+    }
+
+    p {
+        color: #d6d6d6;
+        width: 80vw;
+        font-weight: 100;
+        margin-top: 5.3vw;
+        font-size: 1.188rem;
+
+        @include desktop {
+            margin-top: 1.5vw;
+            font-size: 1.880rem;
+        }
+    }
+
+
+    a#email {
+        width: 80vw;
+        font-size: 1.188rem;
+        text-decoration: none;
+        color: #d6d6d6;
+        margin-top: 3.2vw;
+
+        @include desktop {
+            margin: 2vw 0;
+        }
+    }
+
+    div#icons {
+        width: 80vw;
+        margin-top: 5.3vw;
+
+        a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 3vw;
+
+            @include desktop {
+                margin: 0 3vw 0 0;
+            }
+        }
+
+        @include desktop {
+            margin-top: 2vw;
+            color: #fff;
+        }
+    }
+
+    span {
+        color: #d6d6d6;
+        width: 80vw;
+        margin-top: 5.3vw;
+        margin-bottom: 21.3vw;
+        font-style: italic;
+        font-size: 1.188rem;
+
+        @include desktop {
+            margin: 2vw 0 5vw 0;
+            font-size: 1.5rem;
+        }
+    }
 }
