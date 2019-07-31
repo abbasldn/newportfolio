@@ -314,6 +314,8 @@ main {
     #about {
         border: 3vw solid transparent;
         border-image: url('../img/chicken-2-square.jpeg') 30 round;
+        border: #B13F3F solid 2vw;
+
 
         @include desktop {
             border: none;
