@@ -227,6 +227,7 @@ main {
         box-sizing: border-box;
         border-style: solid;
         border-width: 34px;
+        border-color: transparent;
 
         @include desktop {
             display: flex;
@@ -314,8 +315,8 @@ main {
     }
 
     #about {
-        border: 3vw solid inherit;
         border-image: url('../img/chicken-2-square.jpeg') 30 round;
+        // border: 3vw solid inherit;
 
 
         @include desktop {
