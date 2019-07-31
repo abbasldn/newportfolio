@@ -314,8 +314,7 @@ main {
     }
 
     #about {
-        border: #B13F3F solid 2vw;
-        // border: 3vw solid transparent;
+        border: 3vw solid inherit;
         border-image: url('../img/chicken-2-square.jpeg') 30 round;
 
 
@@ -331,8 +330,7 @@ main {
     }
 
     #inside {
-        border: #df3b1e solid 2vw;
-        border: 3vw solid transparent;
+        border: 3vw solid inherit;
         border-image: url('../img/box-1-square.jpeg') 30 round;
 
         @include desktop {
