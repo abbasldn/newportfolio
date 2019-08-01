@@ -563,7 +563,7 @@ footer {
     }
 
 
-    a#email {
+    a {
         width: 80vw;
         font-size: 1.188rem;
         text-decoration: none;
@@ -571,18 +571,24 @@ footer {
         margin-top: 3.2vw;
 
         @include desktop {
-            margin: 2vw 0;
+            margin: 2vw 0 0 0;
         }
     }
 
     div#icons {
         width: 80vw;
         margin-top: 5.3vw;
+        display: flex;
 
-        a {
+        a.fab {
             text-decoration: none;
             color: #fff;
-            margin: 0 3vw;
+            margin: 0 1vw;
+            width: 10vw;
+
+            @include desktop {
+                width: 2vw;
+            }
         }
 
         @include desktop {
