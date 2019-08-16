@@ -3,611 +3,244 @@
     padding: 0;
 }
 
-$desktop: 840px;
-
-@mixin desktop {
-    @media (min-width: #{$desktop}) {
-        @content;
-    }
-}
-
 h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 p,
-span,
 a,
-label {
-    font-family: "Avenir";
+span {
+    font-family: "Avenir", "Nunito Sans";
 }
 
-
-.svgwhite {
-    fill: #fff;
+img {
+    width: 20vw;
 }
 
+header {
 
+    background-image: linear-gradient(rgba(69, 197, 225, 0.72), rgba(69, 178, 225, 0.7412), #45a9e1);
 
-nav {
-    width: 100vw;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
+    a {
+        text-decoration: none;
+        color: #ffffff;
+        text-align: center;
 
-    @include desktop {
-        justify-content: center;
-        height: 20vw;
-        position: absolute;
-        flex-direction: row;
+        h1 {
+            padding: 5vw 0 4vw 0;
+            font-weight: 100;
+            font-size: 20px;
+        }
     }
 
-    ul {
-        height: 0;
-        width: 100vw;
+
+    img {
+        width: 20vw;
+    }
+
+    nav {
         display: flex;
-        flex-direction: column;
-        list-style-type: none;
-        justify-content: center;
-        margin: auto;
-        position: absolute;
-        opacity: 0;
-        transition: opacity 0.5s ease-in-out, height 0.5s ease-in-out;
-        background-color: rgba(0, 2, 126, 0.945);
+        width: 100vw;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2vw 0;
 
-        @include desktop {
-            opacity: 1;
-            flex-direction: row;
-            align-items: center;
-            height: inherit;
-            background-color: inherit;
-            width: 80vw;
-            margin: auto;
-        }
+        ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
 
-        li {
-            margin: 3vw 10vw;
+            li {
+                padding: 0 4vw;
 
-            @include desktop {
-                margin: 5vw 1vw;
-                width: 15vw;
-            }
-
-            a {
-                text-decoration: none;
-                font-size: 1.5rem;
-                text-transform: uppercase;
-                color: #fff;
-                font-weight: 700;
-
-                @include desktop {
-                    color: #000;
-                }
-            }
-
-            a:after {
-                content: '';
-                display: block;
-                background-image: linear-gradient(270deg, #9fd8ff 3%, #0283bc 50%, #000054 97%);
-                // background-color: #deeefb;
-                width: 20vw;
-                height: 4px;
-
-                @include desktop {
-                    width: 5vw;
+                i.fab {
+                    font-size: 25px;
                 }
             }
         }
 
-        li#nav-logo {
-            display: none;
-
-            @include desktop {
-                display: block;
+        ul#nav-ul {
+            li {
+                font-size: 15px;
+                font-weight: 500;
             }
-
-            img {
-                @include desktop {
-                    width: 10vw;
-                    border-radius: 50%;
-                }
-            }
-
-            a:after {
-                display: none;
-            }
-        }
-    }
-
-    ul.ul-open {
-        height: 100vh;
-        opacity: 1;
-
-    }
-
-    a#logo {
-        width: 10vw;
-        position: absolute;
-        margin: 10vw;
-
-        @include desktop {
-            display: none;
-        }
-    }
-
-    .toggle-container {
-        position: absolute;
-        align-self: flex-end;
-
-        @include desktop {
-            display: none;
-        }
-
-        .nav-icon {
-            margin: 10vw;
-            width: 10vw;
-
-            span {
-                background-color: #000;
-                border-radius: 3px;
-                content: '';
-                display: block;
-                height: 5px;
-                margin: 7px 0;
-                transition: all 0.5s ease-in-out;
-            }
-        }
-
-
-        .pushed .bar {
-            background-color: #fff;
-        }
-
-        .pushed .bar:nth-of-type(1) {
-            transform: translateY(12px) rotate(135deg);
-        }
-
-        .pushed .bar:nth-of-type(2) {
-            transform: scale(0);
-        }
-
-        .pushed .bar:nth-of-type(3) {
-            transform: translateY(-12px) rotate(-135deg);
         }
     }
 }
 
 main {
+    section {
+        div {
+            div.intro {
+                display: flex;
+                flex-direction: column;
 
-    .section-content {
-        width: 80vw;
-        margin: 0 auto;
-    }
-
-    .section-content {
-        h1:after {
-            content: '';
-            display: block;
-            background-image: linear-gradient(270deg, #9fd8ff 3%, #0283bc 50%, #000054 97%);
-            width: 20vw;
-            height: 4px;
-            margin: 5vw 0;
-
-            @include desktop {
-                margin: 2vw 0;
-            }
-        }
-
-        h1 {
-            padding: 5vw 0;
-            font-size: 2.5rem;
-            font-weight: 900;
-
-            @include desktop {
-                padding: 1vw 0;
-            }
-        }
-
-        p {
-            font-size: 1.5rem;
-            padding: 5vw 0 15vw 0;
-
-            @include desktop {
-                padding: 0 0 5vw 0;
-            }
-        }
-    }
-
-    section.section-one {
-        background-color: #deeefb;
-
-        h1,
-        p {
-            width: 80vw;
-            margin: auto;
-        }
-
-        .section-content {
-            width: 100vw;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .top {
-            padding-top: 27vw;
-
-            @include desktop {
-                padding-top: 15vw;
-            }
-        }
-
-        .bottom {
-
-            .transition {
-                background-color: #deeefb;
+                h1,
+                img {
+                    width: 85vw;
+                    margin: auto;
+                }
 
                 img {
-                    width: 100vw;
-                    vertical-align: bottom;
+                    margin: 4.2vw auto;
+                }
+
+                h1 {
+                    font-weight: normal;
+                    font-size: 17px;
+                    margin-bottom: 5.3vw;
                 }
             }
 
-            .landing-greeting {
-                background-color: #000054;
-                box-shadow: 0px 1px 1px 1px #deeefb;
-
-                .landing-text {
-                    width: 80vw;
-                    margin: auto;
-                    color: #fff;
-
-                    h1 {
-                        padding-top: 5vw;
-                    }
-                }
-            }
-        }
-    }
-
-
-
-
-    section.section-two {
-        width: 100vw;
-
-        .section-content {
-            width: 80vw;
-            margin: auto;
-
-            h1 {
-                font-size: 2rem;
-                font-weight: 700;
-                padding-top: 10vw;
-
-                @include desktop {
-                    padding-top: 5vw;
-                }
-            }
-
-            .work {
+            div.action-box {
+                width: 85vw;
+                background-color: #f7f7f7;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-around;
+                margin: auto;
+                border-radius: 3px;
+                margin-bottom: 13.3vw;
 
-                @include desktop {
-                    flex-direction: row;
-                    justify-content: space-between;
+                a {
+                    text-align: center;
+                    margin: 2vw auto;
+                    font-size: 11px;
+                    width: 73vw;
+                    text-decoration: none;
                 }
 
-                .work-tile {
-                    margin-top: 3vw;
+                a#email {
+                    text-transform: uppercase;
+                    background-color: #459be1;
+                    border-radius: 2px;
+                    padding: 1vw 0;
+                    margin: 4.7vw auto 4vw auto;
+                    color: #fff;
                 }
 
-                .work-tile,
-                .work-content,
-                .work-tile .work-content img {
-                    width: 80vw;
-
-                    @include desktop {
-                        width: 30vw;
-                    }
+                a#hirelink {
+                    margin: 0 auto 4.8vw auto;
+                    color: #459BE1;
                 }
-
-                .work-tile {
-                    .work-content {
-                        img {
-
-
-                            @include desktop {
-
-
-                                width: 30vw;
-                                height: 30vw;
-                            }
-
-                        }
-                    }
-                }
-
-                .client-name {
-                    a {
-                        text-decoration: none;
-                        color: #000054;
-
-                        h3 {
-                            font-weight: 700;
-                            font-size: 1.6rem;
-                            margin: 5vw 0;
-
-                            @include desktop {
-                                margin: 1vw 0;
-                            }
-                        }
-                    }
-
-                    p {
-                        padding: 0 0 10vw 0;
-                        font-size: 1.2rem;
-                        font-style: italic;
-
-                        @include desktop {
-                            padding-bottom: 6vw;
-                        }
-                    }
-                }
-            }
-
-
-        }
-
-        a#help {
-            padding: 3vw 6vw;
-            border-radius: 20vw;
-            border: 1vw solid #deeefb;
-            text-decoration: none;
-            color: #deeffb;
-            background-color: #000054;
-
-            @include desktop {
-                padding: 1vw 3vw;
             }
         }
     }
-}
 
-section.section-three {
-    .section-content {
-        padding-top: 5vw;
+    section#work,
+    section#skills,
+    section#clients {
+        width: 85vw;
+        margin: auto;
 
-        .testimonials {
-            background-color: #deeefb;
-            padding: 5vw;
-            border-radius: 5vw;
-            box-shadow: 0px 1px 16px 1px rgb(207, 207, 207);
+        h4 {
+            font-weight: normal;
+            text-transform: uppercase;
+            font-size: 12px;
+            color: #636363;
+            letter-spacing: 0.1em;
+            margin-bottom: 4.8vw;
+            margin-top: 8vw;
+        }
+    }
+
+    section#work {
+        div.work-tile {
+            a {
+                text-decoration: none;
+                color: #343434;
+                border-bottom: dashed 1px #343434;
+            }
 
             p {
-                font-size: 1rem;
-                padding: 0 0 5vw 0;
-
-                @include desktop {
-                    font-size: 1.25rem;
-                    padding-bottom: 3vw;
-                }
-            }
-
-            h4 {
-
-
-                @include desktop {
-                    font-size: 1.3rem
-                }
-            }
-
-        }
-    }
-
-
-}
-
-
-section.form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    .section-content {
-        @include desktop {
-            padding: 3vw 0;
-        }
-    }
-
-    form {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 80vw;
-
-        div.wideblock {
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-            width: 80vw;
-
-            @include desktop {
-                flex-direction: row;
-                align-items: center;
-                justify-content: space-between;
-            }
-
-            div.formconts {
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-
-                @include desktop {
-                    display: flex;
-                    flex-direction: column;
-                    width: 47.5%;
-                }
-            }
-        }
-
-        label {
-            font-size: 1.563em;
-            font-weight: 100;
-        }
-
-        label,
-        input,
-        textarea {
-            transition: box-shadow 0.5s;
-            -webkit-transition: box-shadow 0.5s;
-            outline: none;
-            border-style: none;
-            margin-top: 4vw;
-
-            @include desktop {
-                margin-top: 2vw;
-            }
-        }
-
-        textarea {
-            max-width: 80vw;
-        }
-
-
-        textarea,
-        input#firstname,
-        input#surname,
-        input#email,
-        input#company {
-            background-color: #f8f8f8;
-            padding: 4vw;
-            font-size: 1em;
-            font-family: 'Avenir';
-
-            @include desktop {
-                padding: 2vw;
-            }
-        }
-
-        input:hover,
-        textarea:hover {
-            box-shadow: 0 0px 5px rgba(0, 0, 255, 0.9);
-            outline: none;
-        }
-
-        div.button-container {
-            margin-top: 5vw;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            button {
-                padding: 4vw;
-                background-color: #deeefb;
-                border-radius: 25px;
-                font-size: 0.9em;
-                width: 66.6%;
-                font-family: 'Avenir';
-                font-size: 1.1em;
-                text-transform: uppercase;
-                border: none;
-                box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.2);
-
-                @include desktop {
-                    width: 25%;
-                    padding: 1vw;
-                }
+                font-size: 15px;
+                font-weight: 100;
+                margin: 2.6vw 0;
             }
         }
     }
+
+    section#skills {
+        h5 {
+            font-weight: normal;
+            text-transform: uppercase;
+            font-size: 14px;
+            color: #343434;
+            letter-spacing: 0.1em;
+            margin-bottom: 1.7vw;
+        }
+    }
+
+    section#clients {
+        p {
+            font-style: italic;
+            font-size: 13px;
+            margin-bottom: 9.3vw;
+        }
+    }
+
 }
 
 footer {
-    margin-top: 10.6vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #000054;
+    background-color: #45A9E1;
 
-    @include desktop {
-        margin-top: 0;
+    h1,
+    p,
+    a,
+    ul,
+    span {
+        width: 85vw;
+        margin: auto;
     }
 
     h1 {
-        width: 80vw;
-        color: #fff;
-        font-weight: 700;
-        font-size: 2.5rem;
-        margin-top: 11.4vw;
-        text-align: left;
+        font-size: 12px;
+        font-weight: normal;
+        color: #000;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin: 5.3vw auto 0 auto;
     }
 
     p {
-        color: #d6d6d6;
-        width: 80vw;
-        font-weight: 100;
-        margin-top: 5.3vw;
-        font-size: 1.188rem;
+        font-size: 13px;
+        color: #fff;
+        margin: 2.65vw auto;
 
-        @include desktop {
-            margin-top: 1.5vw;
-            font-size: 1.880rem;
-        }
-    }
+        span {
+            font-weight: 600;
 
-
-    a {
-        width: 80vw;
-        font-size: 1.188rem;
-        text-decoration: none;
-        color: #d6d6d6;
-        margin-top: 3.2vw;
-
-        @include desktop {
-            margin: 2vw 0 0 0;
-        }
-    }
-
-    div#icons {
-        width: 80vw;
-        margin-top: 5.3vw;
-        display: flex;
-
-        a.fab {
-            text-decoration: none;
-            color: #fff;
-            margin: 0 1vw;
-            width: 10vw;
-
-            @include desktop {
-                width: 2vw;
+            a {
+                text-decoration: none;
+                color: #000;
             }
         }
+    }
 
-        @include desktop {
-            margin-top: 2vw;
-            color: #fff;
+    a {
+        font-size: 13px;
+        text-decoration: none;
+        color: #000;
+        margin-bottom: 2vw;
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        margin: 2vw auto;
+
+        li {
+            margin: 0 2vw;
         }
     }
 
     span {
-        color: #d6d6d6;
-        width: 80vw;
-        margin-top: 5.3vw;
-        margin-bottom: 21.3vw;
-        font-style: italic;
-        font-size: 1.188rem;
-
-        @include desktop {
-            margin: 2vw 0 5vw 0;
-            font-size: 1.5rem;
-        }
+        color: #000;
+        letter-spacing: 0.05em;
+        font-size: 12px;
+        margin: 6vw auto 5.3vw auto;
     }
 }
