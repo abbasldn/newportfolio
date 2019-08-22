@@ -17,7 +17,7 @@ img {
   width: 20vw; }
 
 header {
-  background-image: linear-gradient(rgba(69, 197, 225, 0.72), rgba(69, 178, 225, 0.7412), #45a9e1); }
+  background-color: #459BE1; }
   header a {
     text-decoration: none;
     color: #ffffff;
@@ -147,7 +147,8 @@ footer {
     color: #fff;
     margin: 2.65vw auto; }
     footer p span {
-      font-weight: 600; }
+      font-weight: 600;
+      text-transform: lowercase; }
       footer p span a {
         text-decoration: none;
         color: #000; }
@@ -166,4 +167,5 @@ footer {
     color: #000;
     letter-spacing: 0.05em;
     font-size: 12px;
+    text-transform: uppercase;
     margin: 6vw auto 5.3vw auto; }

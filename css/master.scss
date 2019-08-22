@@ -21,7 +21,8 @@ img {
 
 header {
 
-    background-image: linear-gradient(rgba(69, 197, 225, 0.72), rgba(69, 178, 225, 0.7412), #45a9e1);
+    // background-image: linear-gradient(rgba(69, 197, 225, 0.72), rgba(69, 178, 225, 0.7412), #45a9e1);
+    background-color: #459BE1;
 
     a {
         text-decoration: none;
@@ -212,6 +213,7 @@ footer {
 
         span {
             font-weight: 600;
+            text-transform: lowercase;
 
             a {
                 text-decoration: none;
@@ -241,6 +243,7 @@ footer {
         color: #000;
         letter-spacing: 0.05em;
         font-size: 12px;
+        text-transform: uppercase;
         margin: 6vw auto 5.3vw auto;
     }
 }
