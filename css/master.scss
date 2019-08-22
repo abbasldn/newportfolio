@@ -20,7 +20,6 @@ img {
 }
 
 header {
-
     // background-image: linear-gradient(rgba(69, 197, 225, 0.72), rgba(69, 178, 225, 0.7412), #45a9e1);
     background-color: #459BE1;
 
@@ -54,7 +53,7 @@ header {
             justify-content: center;
 
             li {
-                padding: 0 4vw;
+                padding: 0 3vw;
 
                 i.fab {
                     font-size: 25px;
@@ -107,7 +106,7 @@ main {
                 a {
                     text-align: center;
                     margin: 2vw auto;
-                    font-size: 11px;
+                    font-size: 13px;
                     width: 73vw;
                     text-decoration: none;
                 }
@@ -138,7 +137,7 @@ main {
         h4 {
             font-weight: normal;
             text-transform: uppercase;
-            font-size: 12px;
+            font-size: 13px;
             color: #636363;
             letter-spacing: 0.1em;
             margin-bottom: 4.8vw;
@@ -176,7 +175,7 @@ main {
     section#clients {
         p {
             font-style: italic;
-            font-size: 13px;
+            font-size: 14px;
             margin-bottom: 9.3vw;
         }
     }
@@ -207,7 +206,7 @@ footer {
     }
 
     p {
-        font-size: 13px;
+        font-size: 14px;
         color: #fff;
         margin: 2.65vw auto;
 
@@ -223,7 +222,7 @@ footer {
     }
 
     a {
-        font-size: 13px;
+        font-size: 14px;
         text-decoration: none;
         color: #000;
         margin-bottom: 2vw;
@@ -242,7 +241,7 @@ footer {
     span {
         color: #000;
         letter-spacing: 0.05em;
-        font-size: 12px;
+        font-size: 14px;
         text-transform: uppercase;
         margin: 6vw auto 5.3vw auto;
     }
