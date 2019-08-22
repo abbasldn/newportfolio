@@ -74,6 +74,8 @@ main section div div.action-box {
     font-size: 15px;
     width: 73vw;
     text-decoration: none; }
+    main section div div.action-box a i {
+      font-size: 10px; }
   main section div div.action-box a#email {
     text-transform: uppercase;
     background-color: #459be1;
