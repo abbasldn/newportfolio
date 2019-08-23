@@ -11,8 +11,13 @@ h5,
 h6,
 p,
 a,
-span {
+span,
+label {
     font-family: "Avenir", "Nunito Sans";
+}
+
+p {
+    letter-spacing: 0.01em;
 }
 
 img {
@@ -21,8 +26,8 @@ img {
 
 header {
     // background-image: linear-gradient(rgba(69, 197, 225, 0.72), rgba(69, 178, 225, 0.7412), #45a9e1);
-    // background-color: #459BE1;
-    background-color: #000;
+    background-color: #459BE1;
+    // background-color: #000;
 
     a {
         text-decoration: none;
@@ -124,6 +129,7 @@ main {
                     padding: 1vw 0;
                     margin: 4.7vw auto 4vw auto;
                     color: #fff;
+                    letter-spacing: 0.1em;
                 }
 
                 a#hirelink {
@@ -156,7 +162,7 @@ main {
             a {
                 text-decoration: none;
                 color: #343434;
-                border-bottom: dashed 1px #343434;
+                border-bottom: solid 1px #343434;
                 font-size: 18px;
             }
 
@@ -164,6 +170,11 @@ main {
                 font-size: 16px;
                 font-weight: 100;
                 margin: 2.6vw 0;
+
+                a {
+                    font-size: 16px;
+                    border-bottom: dashed 0.5px #459BE1;
+                }
             }
         }
     }
@@ -217,14 +228,10 @@ footer {
         color: #fff;
         margin: 2.65vw auto;
 
-        span {
-            font-weight: 600;
-            text-transform: lowercase;
-
-            a {
-                text-decoration: none;
-                color: #000;
-            }
+        a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 500;
         }
     }
 

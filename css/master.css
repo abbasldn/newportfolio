@@ -10,14 +10,18 @@ h5,
 h6,
 p,
 a,
-span {
+span,
+label {
   font-family: "Avenir", "Nunito Sans"; }
+
+p {
+  letter-spacing: 0.01em; }
 
 img {
   width: 20vw; }
 
 header {
-  background-color: #000; }
+  background-color: #459BE1; }
   header a {
     text-decoration: none;
     color: #ffffff;
@@ -83,7 +87,8 @@ main section div div.action-box {
     border-radius: 2px;
     padding: 1vw 0;
     margin: 4.7vw auto 4vw auto;
-    color: #fff; }
+    color: #fff;
+    letter-spacing: 0.1em; }
   main section div div.action-box a#hirelink {
     margin: 0 auto 4.8vw auto;
     color: #459BE1; }
@@ -107,13 +112,16 @@ main section#clients {
 main section#work div.work-tile a {
   text-decoration: none;
   color: #343434;
-  border-bottom: dashed 1px #343434;
+  border-bottom: solid 1px #343434;
   font-size: 18px; }
 
 main section#work div.work-tile p {
   font-size: 16px;
   font-weight: 100;
   margin: 2.6vw 0; }
+  main section#work div.work-tile p a {
+    font-size: 16px;
+    border-bottom: dashed 0.5px #459BE1; }
 
 main section#skills h5 {
   font-weight: normal;
@@ -150,12 +158,10 @@ footer {
     font-size: 17px;
     color: #fff;
     margin: 2.65vw auto; }
-    footer p span {
-      font-weight: 600;
-      text-transform: lowercase; }
-      footer p span a {
-        text-decoration: none;
-        color: #000; }
+    footer p a {
+      text-decoration: none;
+      color: #000;
+      font-weight: 500; }
   footer a {
     font-size: 17px;
     text-decoration: none;

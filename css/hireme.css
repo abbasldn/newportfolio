@@ -9,3 +9,84 @@ section h1 {
   font-weight: 500;
   color: #343434;
   font-size: 18px; }
+
+section#hiremeintro p,
+section#testimonials p,
+section.form p {
+  margin-bottom: 4vw; }
+
+section#hiremeintro h3,
+section#testimonials h3,
+section.form h3 {
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #636363;
+  letter-spacing: 0.1em;
+  margin: 6vw auto 4.8vw auto;
+  width: 85vw; }
+
+section.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  section.form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 85vw; }
+    section.form form div.wideblock {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      width: 85vw; }
+      section.form form div.wideblock div.formconts {
+        display: flex;
+        flex-direction: column;
+        width: 100%; }
+    section.form form label {
+      font-size: 1.3em;
+      font-weight: 100; }
+    section.form form label,
+    section.form form input,
+    section.form form textarea {
+      transition: box-shadow 0.5s;
+      -webkit-transition: box-shadow 0.5s;
+      outline: none;
+      border-style: none;
+      margin-top: 4vw; }
+    section.form form textarea {
+      max-width: 75vw; }
+    section.form form textarea,
+    section.form form input#firstname,
+    section.form form input#surname,
+    section.form form input#email,
+    section.form form input#company {
+      background-color: #f8f8f8;
+      padding: 3vw;
+      font-size: 1em;
+      font-family: 'Avenir'; }
+    section.form form input:hover,
+    section.form form textarea:hover {
+      box-shadow: 0 0px 5px rgba(184, 229, 255, 0.9);
+      outline: none; }
+
+div.button-container {
+  margin: 5vw 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  div.button-container button {
+    padding: 2vw;
+    background-color: #459BE1;
+    color: #fff;
+    border-radius: 25px;
+    font-size: 0.9em;
+    width: 66.6%;
+    font-family: 'Avenir';
+    font-size: 1.1em;
+    text-transform: uppercase;
+    border: none;
+    box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.2); }
