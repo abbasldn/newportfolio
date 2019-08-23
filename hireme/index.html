@@ -38,7 +38,7 @@
     <main>
         <section>
             <div>
-                <div>
+                <div class="intro">
                     <!-- <h1 class="txt-rotate" data-period="2000" data-rotate='[ "Welcome.", "你好.", "こんにちは.", ".أهلاً و سهلاً"]'></h1> -->
                     <img src="/img/wireframes.jpg" alt="wireframes">
                     <h1>I'm based in London, I design and develop bespoke websites which turn visitors into customers.
@@ -76,41 +76,45 @@
                 </div>
             </div>
         </section>
-        <div class="form" id="form">
-            <div class="section-content">
-                <h1>Get in touch</h1>
-                <form action="https://usebasin.com/f/0d0905238f45" method="post">
-                    <div class="wideblock">
-                        <div class="formconts">
-                            <label for="name">First Name</label>
-                            <input type="text" name="name" required placeholder="What's your name?" id="firstname" />
+        <section>
+
+            <div class="form" id="form">
+                <div class="section-content">
+                    <h1>Get in touch</h1>
+                    <form action="https://usebasin.com/f/0d0905238f45" method="post">
+                        <div class="wideblock">
+                            <div class="formconts">
+                                <label for="name">First Name</label>
+                                <input type="text" name="name" required placeholder="What's your name?"
+                                    id="firstname" />
+                            </div>
+                            <div class="formconts">
+                                <label for="name">Surname</label>
+                                <input type="text" name="surname" required placeholder="What's your surname?"
+                                    id="surname" />
+                            </div>
                         </div>
-                        <div class="formconts">
-                            <label for="name">Surname</label>
-                            <input type="text" name="surname" required placeholder="What's your surname?"
-                                id="surname" />
+                        <div class="wideblock">
+                            <div class="formconts">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required
+                                    placeholder="What's your email address?" />
+                            </div>
+                            <div class="formconts">
+                                <label for="company">Company</label>
+                                <input type="text" name="company" placeholder="Enter your company name" id="company" />
+                            </div>
                         </div>
-                    </div>
-                    <div class="wideblock">
-                        <div class="formconts">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" name="email" required
-                                placeholder="What's your email address?" />
+                        <label for="project" name="about-project">Your project</label>
+                        <textarea rows="4" cols="50" name="comment" required id="project"
+                            placeholder="Tell me about your project"></textarea>
+                        <div class="button-container">
+                            <button type="submit">Submit</button>
                         </div>
-                        <div class="formconts">
-                            <label for="company">Company</label>
-                            <input type="text" name="company" placeholder="Enter your company name" id="company" />
-                        </div>
-                    </div>
-                    <label for="project" name="about-project">Your project</label>
-                    <textarea rows="4" cols="50" name="comment" required id="project"
-                        placeholder="Tell me about your project"></textarea>
-                    <div class="button-container">
-                        <button type="submit">Submit</button>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
-        </div>
+        </section>
 
         <section>
             <h4>Clients &amp; Collaborative Partners</h4>
@@ -120,7 +124,9 @@
         <footer>
             <h1>Contact</h1>
             <p>
-                I’m always open to new projects and available for <span>hire</span> if you’d like to work together.
+                I’m always open to new projects and available for <a href="/hireme">hire</a> if you’d like to
+                work
+                together.
             </p>
             <a id="number" href="tel:+447743686524">+44(0) 77436 86524</a>
             <a id="email" href="mailto:work@abbasldn.com">work@abbasldn.com</a>
