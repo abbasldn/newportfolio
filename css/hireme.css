@@ -26,6 +26,20 @@ section.form h3 {
   margin: 6vw auto 4.8vw auto;
   width: 85vw; }
 
+section#testimonials div {
+  background-color: #f8f8f8;
+  border-left: 2vw solid #343434; }
+  section#testimonials div p,
+  section#testimonials div h4 {
+    width: 85vw;
+    padding: 3vw 5vw 3vw 4vw;
+    box-sizing: border-box; }
+  section#testimonials div p {
+    padding-bottom: 0; }
+  section#testimonials div h4 {
+    text-align: right;
+    font-weight: normal; }
+
 section.form {
   display: flex;
   flex-direction: column;

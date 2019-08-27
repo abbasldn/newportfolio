@@ -35,6 +35,29 @@ section.form {
     }
 }
 
+section#testimonials {
+    div {
+        background-color: #f8f8f8;
+        border-left: 2vw solid #343434;
+
+        p,
+        h4 {
+            width: 85vw;
+            padding: 3vw 5vw 3vw 4vw;
+            box-sizing: border-box;
+        }
+
+        p {
+            padding-bottom: 0;
+        }
+
+        h4 {
+            text-align: right;
+            font-weight: normal;
+        }
+    }
+}
+
 
 
 section.form {
