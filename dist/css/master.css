@@ -6,408 +6,279 @@ h1,
 h2,
 h3,
 h4,
+h5,
+h6,
 p,
-span,
 a,
+ul,
+li,
+span,
 label {
-  font-family: "Avenir"; }
+  font-family: "Avenir", "Nunito Sans"; }
 
-.svgwhite {
-  fill: #fff; }
+p,
+li {
+  letter-spacing: 0.01em; }
 
-nav {
-  width: 100vw;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  align-content: center; }
+img {
+  width: 20vw; }
+
+header {
+  background-color: #459BE1; }
   @media (min-width: 840px) {
-    nav {
-      justify-content: center;
-      height: 20vw;
-      position: absolute;
-      flex-direction: row; } }
-  nav ul {
-    height: 0;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    list-style-type: none;
-    justify-content: center;
-    margin: auto;
-    position: absolute;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out, height 0.5s ease-in-out;
-    background-color: rgba(0, 2, 126, 0.945); }
-    @media (min-width: 840px) {
-      nav ul {
-        opacity: 1;
-        flex-direction: row;
-        align-items: center;
-        height: inherit;
-        background-color: inherit;
-        width: 80vw;
-        margin: auto; } }
-    nav ul li {
-      margin: 3vw 10vw; }
-      @media (min-width: 840px) {
-        nav ul li {
-          margin: 5vw 1vw;
-          width: 15vw; } }
-      nav ul li a {
-        text-decoration: none;
-        font-size: 1.5rem;
-        text-transform: uppercase;
-        color: #fff;
-        font-weight: 700; }
-        @media (min-width: 840px) {
-          nav ul li a {
-            color: #000; } }
-      nav ul li a:after {
-        content: '';
-        display: block;
-        background-image: linear-gradient(270deg, #9fd8ff 3%, #0283bc 50%, #000054 97%);
-        width: 20vw;
-        height: 4px; }
-        @media (min-width: 840px) {
-          nav ul li a:after {
-            width: 5vw; } }
-    nav ul li#nav-logo {
-      display: none; }
-      @media (min-width: 840px) {
-        nav ul li#nav-logo {
-          display: block; } }
-      @media (min-width: 840px) {
-        nav ul li#nav-logo img {
-          width: 10vw;
-          border-radius: 50%; } }
-      nav ul li#nav-logo a:after {
-        display: none; }
-  nav ul.ul-open {
-    height: 100vh;
-    opacity: 1; }
-  nav a#logo {
-    width: 10vw;
-    position: absolute;
-    margin: 10vw; }
-    @media (min-width: 840px) {
-      nav a#logo {
-        display: none; } }
-  nav .toggle-container {
-    position: absolute;
-    align-self: flex-end; }
-    @media (min-width: 840px) {
-      nav .toggle-container {
-        display: none; } }
-    nav .toggle-container .nav-icon {
-      margin: 10vw;
-      width: 10vw; }
-      nav .toggle-container .nav-icon span {
-        background-color: #000;
-        border-radius: 3px;
-        content: '';
-        display: block;
-        height: 5px;
-        margin: 7px 0;
-        transition: all 0.5s ease-in-out; }
-    nav .toggle-container .pushed .bar {
-      background-color: #fff; }
-    nav .toggle-container .pushed .bar:nth-of-type(1) {
-      transform: translateY(12px) rotate(135deg); }
-    nav .toggle-container .pushed .bar:nth-of-type(2) {
-      transform: scale(0); }
-    nav .toggle-container .pushed .bar:nth-of-type(3) {
-      transform: translateY(-12px) rotate(-135deg); }
-
-main .section-content {
-  width: 80vw;
-  margin: 0 auto; }
-
-main .section-content h1:after {
-  content: '';
-  display: block;
-  background-image: linear-gradient(270deg, #9fd8ff 3%, #0283bc 50%, #000054 97%);
-  width: 20vw;
-  height: 4px;
-  margin: 5vw 0; }
-  @media (min-width: 840px) {
-    main .section-content h1:after {
-      margin: 2vw 0; } }
-
-main .section-content h1 {
-  padding: 5vw 0;
-  font-size: 2.5rem;
-  font-weight: 900; }
-  @media (min-width: 840px) {
-    main .section-content h1 {
-      padding: 1vw 0; } }
-
-main .section-content p {
-  font-size: 1.5rem;
-  padding: 5vw 0 15vw 0; }
-  @media (min-width: 840px) {
-    main .section-content p {
-      padding: 0 0 5vw 0; } }
-
-main section.section-one {
-  background-color: #deeefb; }
-  main section.section-one h1,
-  main section.section-one p {
-    width: 80vw;
-    margin: auto; }
-  main section.section-one .section-content {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; }
-  main section.section-one .top {
-    padding-top: 27vw; }
-    @media (min-width: 840px) {
-      main section.section-one .top {
-        padding-top: 15vw; } }
-  main section.section-one .bottom .transition {
-    background-color: #deeefb; }
-    main section.section-one .bottom .transition img {
-      width: 100vw;
-      vertical-align: bottom; }
-  main section.section-one .bottom .landing-greeting {
-    background-color: #000054;
-    box-shadow: 0px 1px 1px 1px #deeefb; }
-    main section.section-one .bottom .landing-greeting .landing-text {
-      width: 80vw;
-      margin: auto;
-      color: #fff; }
-      main section.section-one .bottom .landing-greeting .landing-text h1 {
-        padding-top: 5vw; }
-
-main section.section-two {
-  width: 100vw; }
-  main section.section-two .section-content {
-    width: 80vw;
-    margin: auto; }
-    main section.section-two .section-content h1 {
-      font-size: 2rem;
-      font-weight: 700;
-      padding-top: 10vw; }
-      @media (min-width: 840px) {
-        main section.section-two .section-content h1 {
-          padding-top: 5vw; } }
-    main section.section-two .section-content .work {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around; }
-      @media (min-width: 840px) {
-        main section.section-two .section-content .work {
-          flex-direction: row;
-          justify-content: space-between; } }
-      main section.section-two .section-content .work .work-tile {
-        margin-top: 3vw; }
-      main section.section-two .section-content .work .work-tile,
-      main section.section-two .section-content .work .work-content,
-      main section.section-two .section-content .work .work-tile .work-content img {
-        width: 80vw; }
-        @media (min-width: 840px) {
-          main section.section-two .section-content .work .work-tile,
-          main section.section-two .section-content .work .work-content,
-          main section.section-two .section-content .work .work-tile .work-content img {
-            width: 30vw; } }
-      @media (min-width: 840px) {
-        main section.section-two .section-content .work .work-tile .work-content img {
-          width: 30vw;
-          height: 30vw; } }
-      main section.section-two .section-content .work .client-name a {
-        text-decoration: none;
-        color: #000054; }
-        main section.section-two .section-content .work .client-name a h3 {
-          font-weight: 700;
-          font-size: 1.6rem;
-          margin: 5vw 0; }
-          @media (min-width: 840px) {
-            main section.section-two .section-content .work .client-name a h3 {
-              margin: 1vw 0; } }
-      main section.section-two .section-content .work .client-name p {
-        padding: 0 0 10vw 0;
-        font-size: 1.2rem;
-        font-style: italic; }
-        @media (min-width: 840px) {
-          main section.section-two .section-content .work .client-name p {
-            padding-bottom: 6vw; } }
-  main section.section-two a#help {
-    padding: 3vw 6vw;
-    border-radius: 20vw;
-    border: 1vw solid #deeefb;
+    header {
+      background-color: #fff; } }
+  header a {
     text-decoration: none;
-    color: #deeffb;
-    background-color: #000054; }
+    color: #ffffff;
+    text-align: center; }
     @media (min-width: 840px) {
-      main section.section-two a#help {
-        padding: 1vw 3vw; } }
-
-section.section-three .section-content {
-  padding-top: 5vw; }
-  section.section-three .section-content .testimonials {
-    background-color: #deeefb;
-    padding: 5vw;
-    border-radius: 5vw;
-    box-shadow: 0px 1px 16px 1px #cfcfcf; }
-    section.section-three .section-content .testimonials p {
-      font-size: 1rem;
-      padding: 0 0 5vw 0; }
+      header a {
+        text-align: left;
+        color: #000; } }
+    header a h1 {
+      padding: 5vw 0 4vw 0;
+      font-weight: 100;
+      font-size: 20px; }
       @media (min-width: 840px) {
-        section.section-three .section-content .testimonials p {
-          font-size: 1.25rem;
-          padding-bottom: 3vw; } }
+        header a h1 {
+          padding: 3vw 0 2vw 0;
+          width: 85vw;
+          margin: auto;
+          font-weight: 500; } }
+  header img {
+    width: 20vw; }
+  header nav {
+    display: flex;
+    width: 95vw;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw 0; }
     @media (min-width: 840px) {
-      section.section-three .section-content .testimonials h4 {
-        font-size: 1.3rem; } }
+      header nav {
+        width: 85vw;
+        margin: auto;
+        padding-top: 0; } }
+    header nav ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: center; }
+      header nav ul li {
+        padding: 0 3vw; }
+        @media (min-width: 840px) {
+          header nav ul li {
+            padding: 0 1vw 0 0; } }
+        @media (min-width: 840px) {
+          header nav ul li a {
+            color: #aaaaaa; } }
+        header nav ul li i.fab {
+          font-size: 25px; }
+    header nav ul#nav-ul li {
+      font-size: 15px;
+      font-weight: bold; }
 
-section.form {
+main section div div.intro {
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 840px) {
+    main section div div.intro {
+      width: 85vw;
+      margin: auto; } }
+  main section div div.intro h1,
+  main section div div.intro img {
+    width: 85vw;
+    margin: auto; }
+  main section div div.intro img {
+    margin: 4.2vw auto; }
+    @media (min-width: 840px) {
+      main section div div.intro img {
+        width: 45vw;
+        margin: 2vw 0; } }
+  main section div div.intro h1 {
+    font-weight: 500;
+    color: #343434;
+    font-size: 18px;
+    margin-bottom: 5.3vw; }
+    @media (min-width: 840px) {
+      main section div div.intro h1 {
+        font-size: 2em;
+        margin: 1vw 0;
+        font-weight: normal; } }
+
+@media (min-width: 840px) {
+  main section div .action-box-container {
+    width: 85vw;
+    margin: auto; } }
+
+main section div div.action-box {
+  width: 85vw;
+  background-color: #f7f7f7;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center; }
+  margin: auto;
+  border-radius: 3px;
+  margin-bottom: 13.3vw; }
   @media (min-width: 840px) {
-    section.form .section-content {
-      padding: 3vw 0; } }
-  section.form form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 80vw; }
-    section.form form div.wideblock {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-      width: 80vw; }
-      @media (min-width: 840px) {
-        section.form form div.wideblock {
-          flex-direction: row;
-          align-items: center;
-          justify-content: space-between; } }
-      section.form form div.wideblock div.formconts {
-        display: flex;
-        flex-direction: column;
-        width: 100%; }
-        @media (min-width: 840px) {
-          section.form form div.wideblock div.formconts {
-            display: flex;
-            flex-direction: column;
-            width: 47.5%; } }
-    section.form form label {
-      font-size: 1.563em;
-      font-weight: 100; }
-    section.form form label,
-    section.form form input,
-    section.form form textarea {
-      transition: box-shadow 0.5s;
-      -webkit-transition: box-shadow 0.5s;
-      outline: none;
-      border-style: none;
-      margin-top: 4vw; }
-      @media (min-width: 840px) {
-        section.form form label,
-        section.form form input,
-        section.form form textarea {
-          margin-top: 2vw; } }
-    section.form form textarea {
-      max-width: 80vw; }
-    section.form form textarea,
-    section.form form input#firstname,
-    section.form form input#surname,
-    section.form form input#email,
-    section.form form input#company {
-      background-color: #f8f8f8;
-      padding: 4vw;
-      font-size: 1em;
-      font-family: 'Avenir'; }
-      @media (min-width: 840px) {
-        section.form form textarea,
-        section.form form input#firstname,
-        section.form form input#surname,
-        section.form form input#email,
-        section.form form input#company {
-          padding: 2vw; } }
-    section.form form input:hover,
-    section.form form textarea:hover {
-      box-shadow: 0 0px 5px rgba(0, 0, 255, 0.9);
-      outline: none; }
-    section.form form div.button-container {
-      margin-top: 5vw;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-      section.form form div.button-container button {
-        padding: 4vw;
-        background-color: #deeefb;
-        border-radius: 25px;
-        font-size: 0.9em;
-        width: 66.6%;
-        font-family: 'Avenir';
-        font-size: 1.1em;
-        text-transform: uppercase;
-        border: none;
-        box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.2); }
-        @media (min-width: 840px) {
-          section.form form div.button-container button {
-            width: 25%;
-            padding: 1vw; } }
+    main section div div.action-box {
+      width: 35vw;
+      padding: 1vw;
+      box-sizing: border-box;
+      margin: 0;
+      justify-content: center; } }
+  main section div div.action-box a {
+    text-align: center;
+    margin: 2vw auto;
+    font-size: 15px;
+    width: 73vw;
+    text-decoration: none; }
+    @media (min-width: 840px) {
+      main section div div.action-box a {
+        width: 25vw; } }
+    main section div div.action-box a i {
+      font-size: 10px; }
+  main section div div.action-box a#email {
+    text-transform: uppercase;
+    background-color: #459be1;
+    border-radius: 2px;
+    padding: 1vw 0;
+    margin: 4.7vw auto 4vw auto;
+    color: #fff;
+    letter-spacing: 0.1em; }
+    @media (min-width: 840px) {
+      main section div div.action-box a#email {
+        margin: auto;
+        padding: 0.5vw 0; } }
+  main section div div.action-box a#hirelink {
+    margin: 0 auto 4.8vw auto;
+    color: #459BE1; }
+    @media (min-width: 840px) {
+      main section div div.action-box a#hirelink {
+        margin: 1vw auto 0 auto; } }
+
+main section#work,
+main section#skills,
+main section#clients {
+  width: 85vw;
+  margin: auto; }
+  main section#work h4,
+  main section#skills h4,
+  main section#clients h4 {
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #636363;
+    letter-spacing: 0.1em;
+    margin-bottom: 4.8vw;
+    margin-top: 8vw; }
+    @media (min-width: 840px) {
+      main section#work h4,
+      main section#skills h4,
+      main section#clients h4 {
+        margin-top: 5vw;
+        margin-bottom: 3vw;
+        font-size: 1.1em; } }
+
+main section#work div.work-tile a {
+  text-decoration: none;
+  color: #343434;
+  border-bottom: solid 1px #343434;
+  font-size: 18px; }
+  @media (min-width: 840px) {
+    main section#work div.work-tile a {
+      font-size: 1.45em; } }
+
+main section#work div.work-tile p {
+  font-size: 16px;
+  font-weight: 100;
+  margin: 2.6vw 0;
+  color: #636363; }
+  @media (min-width: 840px) {
+    main section#work div.work-tile p {
+      margin: 1.8vw 0;
+      font-size: 1.3em; } }
+  main section#work div.work-tile p a {
+    font-size: 16px;
+    border-bottom: dashed 0.5px #459BE1; }
+    @media (min-width: 840px) {
+      main section#work div.work-tile p a {
+        font-size: 1em; } }
+
+main section#skills h5 {
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #343434;
+  letter-spacing: 0.1em;
+  margin-bottom: 1.7vw; }
+
+main section#clients p {
+  font-style: italic;
+  font-size: 16px;
+  margin-bottom: 9.3vw;
+  color: #343434; }
+  @media (min-width: 840px) {
+    main section#clients p {
+      font-size: 1.2em; } }
 
 footer {
-  margin-top: 10.6vw;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #000054; }
-  @media (min-width: 840px) {
-    footer {
-      margin-top: 0; } }
+  background-color: #45A9E1; }
+  footer h1,
+  footer p,
+  footer a,
+  footer ul,
+  footer span {
+    width: 85vw;
+    margin: auto; }
   footer h1 {
-    width: 80vw;
-    color: #fff;
-    font-weight: 700;
-    font-size: 2.5rem;
-    margin-top: 11.4vw;
-    text-align: left; }
+    font-size: 16px;
+    font-weight: normal;
+    color: #000;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin: 5.3vw auto 0 auto; }
+    @media (min-width: 840px) {
+      footer h1 {
+        margin: 3vw auto 0 auto; } }
   footer p {
-    color: #d6d6d6;
-    width: 80vw;
-    font-weight: 100;
-    margin-top: 5.3vw;
-    font-size: 1.188rem; }
+    font-size: 17px;
+    color: #fff;
+    margin: 2.65vw auto; }
     @media (min-width: 840px) {
       footer p {
-        margin-top: 1.5vw;
-        font-size: 1.880rem; } }
-  footer a#email {
-    width: 80vw;
-    font-size: 1.188rem;
-    text-decoration: none;
-    color: #d6d6d6;
-    margin-top: 3.2vw; }
-    @media (min-width: 840px) {
-      footer a#email {
-        margin: 2vw 0; } }
-  footer div#icons {
-    width: 80vw;
-    margin-top: 5.3vw; }
-    footer div#icons a {
+        margin: 1vw auto; } }
+    footer p a {
       text-decoration: none;
-      color: #fff;
-      margin: 0 3vw; }
+      color: #000;
+      font-weight: 500; }
+  footer a {
+    font-size: 17px;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 2vw; }
     @media (min-width: 840px) {
-      footer div#icons {
-        margin-top: 2vw;
-        color: #fff; } }
+      footer a {
+        margin: 0 auto 1vw auto; } }
+  footer ul {
+    list-style-type: none;
+    display: flex;
+    margin: 2vw auto; }
+    @media (min-width: 840px) {
+      footer ul {
+        margin: 0 auto; } }
+    footer ul li {
+      margin: 0 4vw 0 0; }
+      @media (min-width: 840px) {
+        footer ul li {
+          margin: 0 1vw 0 0; } }
   footer span {
-    color: #d6d6d6;
-    width: 80vw;
-    margin-top: 5.3vw;
-    margin-bottom: 21.3vw;
-    font-style: italic;
-    font-size: 1.188rem; }
+    color: #000;
+    letter-spacing: 0.05em;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin: 6vw auto 5.3vw auto; }
     @media (min-width: 840px) {
       footer span {
-        margin: 2vw 0 5vw 0;
-        font-size: 1.5rem; } }
+        margin: 3.5vw auto 3vw auto; } }

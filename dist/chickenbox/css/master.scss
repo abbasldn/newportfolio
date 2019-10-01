@@ -225,6 +225,9 @@ main {
     section {
         width: 100vw;
         box-sizing: border-box;
+        border-style: solid;
+        border-width: 34px;
+        border-color: transparent;
 
         @include desktop {
             display: flex;
@@ -312,8 +315,9 @@ main {
     }
 
     #about {
-        border: 3vw solid transparent;
         border-image: url('../img/chicken-2-square.jpeg') 30 round;
+        // border: 3vw solid inherit;
+
 
         @include desktop {
             border: none;
@@ -327,7 +331,8 @@ main {
     }
 
     #inside {
-        border: 3vw solid transparent;
+        border: #df3b1e solid 2vw;
+        border: 3vw solid inherit;
         border-image: url('../img/box-1-square.jpeg') 30 round;
 
         @include desktop {
@@ -362,6 +367,7 @@ main {
 
     #whereandwhen {
 
+        border: #bd2d2d solid 2vw;
         border: 3vw solid transparent;
         border-image: url('../img/cake-6-square.jpeg') 30 round;
 
@@ -378,6 +384,7 @@ main {
 
     #contact {
 
+        border: #df3b1e solid 2vw;
         border: 3vw solid transparent;
         border-image: url('../img/box-1-square.jpeg') 30 round;
 
@@ -394,6 +401,7 @@ main {
 
     #story {
         margin-bottom: 25vw;
+        border: #B13F3F solid 2vw;
         border: 3vw solid transparent;
         border-image: url('../img/fire-square.jpeg') 30 round;
 

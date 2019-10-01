@@ -1,0 +1,145 @@
+section div,
+section h1,
+section p,
+section h4 {
+  width: 85vw;
+  margin: auto; }
+
+section h1 {
+  font-weight: 500;
+  color: #343434;
+  font-size: 18px; }
+
+section#hiremeintro p,
+section#testimonials p,
+section.form p {
+  margin-bottom: 4vw; }
+  @media (min-width: 840px) {
+    section#hiremeintro p,
+    section#testimonials p,
+    section.form p {
+      font-size: 1.2em; } }
+
+section#hiremeintro h3,
+section#testimonials h3,
+section.form h3 {
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #636363;
+  letter-spacing: 0.1em;
+  margin: 6vw auto 4.8vw auto;
+  width: 85vw; }
+
+section#testimonials div {
+  background-color: #f8f8f8;
+  border-left: 2vw solid #343434; }
+  section#testimonials div p,
+  section#testimonials div h4 {
+    width: 85vw;
+    padding: 3vw 5vw 3vw 4vw;
+    box-sizing: border-box; }
+    @media (min-width: 840px) {
+      section#testimonials div p,
+      section#testimonials div h4 {
+        padding: 2vw 2vw 3vw 2vw;
+        font-size: 1.2em; } }
+  section#testimonials div p {
+    padding-bottom: 0; }
+  section#testimonials div h4 {
+    text-align: right;
+    font-weight: normal; }
+
+section.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  section.form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 85vw; }
+    section.form form div.wideblock {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      width: 85vw; }
+      @media (min-width: 840px) {
+        section.form form div.wideblock {
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between; } }
+      section.form form div.wideblock div.formconts {
+        display: flex;
+        flex-direction: column;
+        width: 100%; }
+        @media (min-width: 840px) {
+          section.form form div.wideblock div.formconts {
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box; } }
+    section.form form label {
+      font-size: 1.3em;
+      font-weight: 100; }
+    section.form form label,
+    section.form form input,
+    section.form form textarea {
+      transition: box-shadow 0.5s;
+      -webkit-transition: box-shadow 0.5s;
+      outline: none;
+      border-style: none;
+      margin-top: 4vw; }
+      @media (min-width: 840px) {
+        section.form form label,
+        section.form form input,
+        section.form form textarea {
+          margin-top: 2vw; } }
+    @media (min-width: 840px) {
+      section.form form input {
+        width: 38vw; } }
+    section.form form textarea {
+      max-width: 85vw; }
+    section.form form textarea,
+    section.form form input#firstname,
+    section.form form input#surname,
+    section.form form input#email,
+    section.form form input#company {
+      background-color: #f8f8f8;
+      padding: 3vw;
+      font-size: 1em;
+      font-family: 'Avenir'; }
+      @media (min-width: 840px) {
+        section.form form textarea,
+        section.form form input#firstname,
+        section.form form input#surname,
+        section.form form input#email,
+        section.form form input#company {
+          padding: 1vw; } }
+    section.form form input:hover,
+    section.form form textarea:hover {
+      box-shadow: 0 0px 5px rgba(184, 229, 255, 0.9);
+      outline: none; }
+
+div.button-container {
+  margin: 5vw 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  div.button-container button {
+    padding: 2vw;
+    background-color: #459BE1;
+    color: #fff;
+    border-radius: 25px;
+    font-size: 0.9em;
+    width: 66.6%;
+    font-family: 'Avenir';
+    font-size: 1.1em;
+    text-transform: uppercase;
+    border: none;
+    box-shadow: 1px 1px 30px rgba(0, 0, 0, 0.2); }
+    @media (min-width: 840px) {
+      div.button-container button {
+        width: 25%;
+        padding: 1vw; } }
