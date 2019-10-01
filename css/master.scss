@@ -19,12 +19,15 @@ h5,
 h6,
 p,
 a,
+ul,
+li,
 span,
 label {
     font-family: "Avenir", "Nunito Sans";
 }
 
-p {
+p,
+li {
     letter-spacing: 0.01em;
 }
 
@@ -72,7 +75,8 @@ header {
 
     nav {
         display: flex;
-        width: 100vw;
+        width: 95vw;
+        margin: auto;
         justify-content: space-between;
         align-items: center;
         padding: 2vw 0;

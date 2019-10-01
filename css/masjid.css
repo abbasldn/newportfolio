@@ -1,0 +1,102 @@
+.work-tile p {
+  color: #343434 !important; }
+
+.work-tile ul {
+  font-family: serif;
+  padding: 0 3vw; }
+  @media (min-width: 840px) {
+    .work-tile ul {
+      padding: 0 1.5vw; } }
+  .work-tile ul li {
+    font-size: 16px;
+    color: #343434; }
+    @media (min-width: 840px) {
+      .work-tile ul li {
+        margin: 1vw 0;
+        font-size: 1.3em; } }
+
+.previous-clients {
+  width: 85vw;
+  margin-bottom: 10vw; }
+  .previous-clients a {
+    text-decoration: none;
+    color: #000; }
+  .previous-clients .client {
+    width: 85vw;
+    display: flex;
+    align-items: center;
+    background-color: #f3f3f3;
+    padding: 1.8vw 2.6vw;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 5px #cfcfcf; }
+    @media (min-width: 840px) {
+      .previous-clients .client {
+        box-shadow: 0px 10px 10px #cfcfcf;
+        padding: 1vw 2vw; } }
+    .previous-clients .client .client-logo-box {
+      width: 8vw; }
+      @media (min-width: 840px) {
+        .previous-clients .client .client-logo-box {
+          width: 3vw; } }
+      .previous-clients .client .client-logo-box img {
+        width: 100%; }
+    .previous-clients .client h3 {
+      margin: 0 3vw;
+      font-weight: 100; }
+
+section.action-button {
+  display: flex;
+  flex-direction: column; }
+  @media (min-width: 840px) {
+    section.action-button {
+      width: 85vw;
+      margin: auto; } }
+
+@media (min-width: 840px) {
+  .action-box-container {
+    width: 85vw;
+    margin: auto; } }
+
+div.action-box {
+  width: 85vw;
+  background-color: #f7f7f7;
+  display: flex;
+  margin: auto;
+  border-radius: 3px;
+  margin-bottom: 13.3vw;
+  flex-direction: column; }
+  @media (min-width: 840px) {
+    div.action-box {
+      width: 45vw;
+      padding: 2vw;
+      box-sizing: border-box;
+      flex-direction: row;
+      margin: 0;
+      justify-content: center; } }
+  div.action-box a {
+    text-align: center;
+    margin: 2vw auto;
+    font-size: 15px;
+    width: 73vw;
+    text-decoration: none;
+    box-shadow: 0px 5px 5px #cfcfcf; }
+    @media (min-width: 840px) {
+      div.action-box a {
+        width: 25vw; } }
+    div.action-box a i {
+      font-size: 15px; }
+  div.action-box a#email,
+  div.action-box a#whatsapp {
+    text-transform: uppercase;
+    background-color: #459be1;
+    border-radius: 2px;
+    padding: 1vw 0;
+    margin: 4.7vw auto 4vw auto;
+    color: #fff;
+    letter-spacing: 0.1em; }
+    @media (min-width: 840px) {
+      div.action-box a#email,
+      div.action-box a#whatsapp {
+        margin: 0 2vw;
+        padding: 0.5vw 0; } }
