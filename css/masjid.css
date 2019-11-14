@@ -89,7 +89,6 @@ div.action-box {
   div.action-box a#email,
   div.action-box a#whatsapp {
     text-transform: uppercase;
-    background-color: #459be1;
     border-radius: 2px;
     padding: 1vw 0;
     margin: 4.7vw auto 4vw auto;
@@ -100,3 +99,7 @@ div.action-box {
       div.action-box a#whatsapp {
         margin: 0 2vw;
         padding: 0.5vw 0; } }
+  div.action-box a#email {
+    background-color: #459be1; }
+  div.action-box a#whatsapp {
+    background-color: #20b355; }
