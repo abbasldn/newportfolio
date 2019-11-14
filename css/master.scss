@@ -319,6 +319,7 @@ footer {
     display: flex;
     flex-direction: column;
     background-color: #45A9E1;
+    padding-bottom: 2vw;
 
     h1,
     p,
@@ -397,5 +398,22 @@ footer {
         @include desktop {
             margin: 3.5vw auto 3vw auto;
         }
+    }
+}
+
+.floating {
+    position: fixed;
+    left: 7.5vw;
+    bottom: 20px;
+    background-color: rgb(32, 179, 85);
+    padding: 0.5vw 1vw;
+    border-radius: 20px;
+
+    box-shadow: 0px 0px 10px rgba(41, 41, 41, 0.336);
+
+    a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 90%;
     }
 }
