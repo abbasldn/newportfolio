@@ -224,7 +224,11 @@ main section#clients p {
 footer {
   display: flex;
   flex-direction: column;
-  background-color: #45A9E1; }
+  background-color: #45A9E1;
+  padding-bottom: 9vw; }
+  @media (min-width: 840px) {
+    footer {
+      padding-bottom: 2vw; } }
   footer h1,
   footer p,
   footer a,
@@ -282,3 +286,19 @@ footer {
     @media (min-width: 840px) {
       footer span {
         margin: 3.5vw auto 3vw auto; } }
+
+.floating {
+  position: fixed;
+  left: 7.5vw;
+  bottom: 20px;
+  background-color: #20b355;
+  padding: 1.5vw 4vw;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgba(41, 41, 41, 0.336); }
+  @media (min-width: 840px) {
+    .floating {
+      padding: 0.5vw 1vw; } }
+  .floating a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 90%; }
