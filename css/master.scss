@@ -319,7 +319,13 @@ footer {
     display: flex;
     flex-direction: column;
     background-color: #45A9E1;
-    padding-bottom: 2vw;
+
+    @include desktop {
+
+        padding-bottom: 2vw;
+    }
+
+    padding-bottom: 9vw;
 
     h1,
     p,
@@ -406,7 +412,14 @@ footer {
     left: 7.5vw;
     bottom: 20px;
     background-color: rgb(32, 179, 85);
-    padding: 0.5vw 1vw;
+
+    @include desktop {
+
+        padding: 0.5vw 1vw;
+    }
+
+    padding: 1.5vw 4vw;
+
     border-radius: 20px;
 
     box-shadow: 0px 0px 10px rgba(41, 41, 41, 0.336);
